@@ -2,7 +2,7 @@
 
 @section('conteudo')
     <h1>Exercício 7</h1>
-        <form method="post" action="resposta7">
+        <form method="post" action="/resposta7">
             @CSRF
             <div class="mb-3">
                 <label for="fahrenheit" class="form-label">Insira uma temperatura em Fahrenheit:</label>

@@ -115,6 +115,17 @@ class ExercicioController extends Controller {
     public function calcularPerimetroCirculo(Request $request){
         $raio = $request->input('raio');
         $perimetroCirculo = 2 * 3.14 * $raio;
-        return view('exercicio11', [ 'perimetroCirculo' => $perimetroCirculo]);
+        return view('exercicio11', ['perimetroCirculo' => $perimetroCirculo]);
+    }
+
+    public function exibirFormulario12(){
+        return view('exercicio12');
+    }
+    public function calcularBaseExpoente(Request $request){
+        $base = $request->input('base');
+        $expoente = $request->input('expoente');
+        $resultado = $base ** $expoente;
+        return view('exercicio12', ['resultado' => $resultado]);
     }
 }
+//Crie um formulário que permita ao usuário inserir um valor em metros. O script PHP deve converter esse valor para centímetros e exibir o resultado.

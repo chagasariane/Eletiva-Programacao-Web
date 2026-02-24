@@ -2,7 +2,7 @@
 
 @section('conteudo')
     <h1>Exercício 10</h1>
-    <form method="post" action="resposta10">
+    <form method="post" action="/resposta10">
         @CSRF
         <div class="mb-3">
             <label for="largura" class="form-label">Insira a largura do retângulo:</label>

@@ -1,7 +1,3 @@
-12. Crie um formulário que permita ao usuário inserir uma base e um expoente. O script PHP deve
-calcular a base elevada ao expoente e exibir o resultado.
-13. Crie um formulário que permita ao usuário inserir um valor em metros. O script PHP deve
-converter esse valor para centímetros e exibir o resultado.
 14. Crie um formulário que permita ao usuário inserir um valor em quilômetros. O script PHP deve
 converter esse valor para milhas (1 quilômetro = 0.621371 milhas) e exibir o resultado.
 15. Crie um formulário que permita ao usuário inserir seu peso (em kg) e altura (em metros). O

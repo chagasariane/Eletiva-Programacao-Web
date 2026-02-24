@@ -43,3 +43,5 @@ Route::post('/resposta10', [ExercicioController::class, 'calcularPerimetroRetang
 Route::get('/exercicio11', [ExercicioController::class, 'exibirFormulario11']);
 Route::post('/resposta11', [ExercicioController::class, 'calcularPerimetroCirculo']);
 
+Route::get('/exercicio12', [ExercicioController::class, 'exibirFormulario12']);
+Route::post('/resposta12', [ExercicioController::class, 'calcularBaseExpoente']);

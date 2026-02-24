@@ -2,7 +2,7 @@
 
 @section('conteudo')
     <h1>Exercício 11</h1>
-    <form method="post" action="resposta11">
+    <form method="post" action="/resposta11">
         @CSRF
         <div class="mb-3">
             <label for="raio" class="form-label">Insira o raio do círculo:</label>

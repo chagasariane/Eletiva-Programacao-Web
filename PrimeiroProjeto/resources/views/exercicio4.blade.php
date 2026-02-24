@@ -2,7 +2,7 @@
 
 @section('conteudo')
     <h1>Exercício4</h1>
-    <form method="post" action="resposta4">
+    <form method="post" action="/resposta4">
         @CSRF
         <div class="mb-3">
             <label for="valor1" class="form-label">Insira um valor:</label>
