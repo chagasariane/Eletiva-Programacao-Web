@@ -37,3 +37,8 @@ Route::post('/resposta8', [ExercicioController::class, 'calcularAreaRetangulo'])
 Route::get('/exercicio9', [ExercicioController::class, 'exibirFormulario9']);
 Route::post('/resposta9', [ ExercicioController::class, 'calcularAreaCirculo']);
 
+Route::get('/exercicio10', [ExercicioController::class, 'exibirFormulario10']);
+Route::post('/resposta10', [ExercicioController::class, 'calcularPerimetroRetangulo']);
+
+Rou
+

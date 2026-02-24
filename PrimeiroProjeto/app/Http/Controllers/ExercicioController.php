@@ -86,8 +86,8 @@ class ExercicioController extends Controller {
     public function calcularAreaRetangulo(Request $request){
         $largura = $request->input('largura');
         $altura = $request->input('altura');
-        $area_retangulo = $altura * $largura;
-        return view('exercicio8', ['area_retangulo' => $area_retangulo]);
+        $areaRetangulo = $altura * $largura;
+        return view('exercicio8', ['areaRetangulo' => $areaRetangulo]);
     }
 
     public function exibirFormulario9(){
@@ -95,8 +95,20 @@ class ExercicioController extends Controller {
     }
     public function calcularAreaCirculo(Request $request){
         $raio = $request->input('raio');
-        $area_circulo = 3.14 * ($raio ** 2);
-        return view('exercicio9', ['area_circulo' => $area_circulo]);
+        $areaCirculo = 3.14 * ($raio ** 2);
+        return view('exercicio9', ['areaCirculo' => $areaCirculo]);
+    }
+
+    public function exibirFormulario10(){
+        return view('exercicio10');
+    }
+    public function calcularPerimetroRetangulo(Request $request){
+        $altura = $request->input('altura');
+        $largura = $request->input('largura');
+        $perimetroRetangulo = ($altura * 2) + ($largura * 2);
+        return view('exercicio10', ['perimetroRetangulo' => $perimetroRetangulo]);
     }
     
 }
+
+//11. Crie um formulário que permita ao usuário inserir o raio de um círculo. O script PHP deve calcular o perímetro do círculo (2πr) e exibir o resultado.

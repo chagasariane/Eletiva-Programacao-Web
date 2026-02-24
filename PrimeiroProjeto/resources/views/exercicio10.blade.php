@@ -1,8 +1,8 @@
 @extends('layout')
 
 @section('conteudo')
-    <h1>Exercício 8</h1>
-    <form method="post" action="resposta8">
+    <h1>Exercício 10</h1>
+    <form method="post" action="resposta10">
         @CSRF
         <div class="mb-3">
             <label for="largura" class="form-label">Insira a largura do retângulo:</label>
@@ -14,7 +14,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
-    @isset($areaRetangulo)
-        <p class="text-success">A área do retângulo é: {{ $areaRetangulo }} m²</p>
+    @isset($perimetroRetangulo)
+        <p class="text-success">O perímetro do retângulo é: {{ $perimetroRetangulo }}</p>
     @endisset
 @endsection

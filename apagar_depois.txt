@@ -1,8 +1,3 @@
-'''
-10. Crie um formulário que permita ao usuário inserir a largura e a altura de um retângulo. O script
-PHP deve calcular o perímetro do retângulo e exibir o resultado.
-11. Crie um formulário que permita ao usuário inserir o raio de um círculo. O script PHP deve
-calcular o perímetro do círculo (2πr) e exibir o resultado.
 12. Crie um formulário que permita ao usuário inserir uma base e um expoente. O script PHP deve
 calcular a base elevada ao expoente e exibir o resultado.
 13. Crie um formulário que permita ao usuário inserir um valor em metros. O script PHP deve
@@ -22,4 +17,3 @@ exibir o resultado.
 converter esse valor para horas, minutos e segundos e exibir o resultado.
 20. Crie um formulário que permita ao usuário inserir uma distância e um tempo. O script PHP
 deve calcular a velocidade média (distância / tempo) e exibir o resultado.
-'''
