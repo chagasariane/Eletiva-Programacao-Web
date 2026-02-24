@@ -157,5 +157,15 @@ class ExercicioController extends Controller {
         $imc = $peso / ($altura ** 2);
         return view('exercicio15', ['imc' => $imc]);
     }
+
+    public function exibirFormulario16(){
+        return view('exercicio16');
+    }
+    public function calcularDesconto(Request $request){
+        $preco = $request->input('preco');
+        $percentual = $request->input('percentual');
+        $desconto = $preco - ($preco * ($percentual / 100));
+        return view('exercicio16', ['desconto' => $desconto]);
+    }
 }
 
