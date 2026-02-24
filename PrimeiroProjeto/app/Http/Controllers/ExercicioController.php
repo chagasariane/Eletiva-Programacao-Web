@@ -127,5 +127,15 @@ class ExercicioController extends Controller {
         $resultado = $base ** $expoente;
         return view('exercicio12', ['resultado' => $resultado]);
     }
+
+    public function exibirFormulario13(){
+        return view('exercicio13');
+    }
+    public function calcularCentimetro(Request $request){
+        $metro = $request->input('metro');
+        $centimetro = $metro * 100;
+        return view('exercicio13', ['centimetro' => $centimetro]);
+    }
 }
-//Crie um formulário que permita ao usuário inserir um valor em metros. O script PHP deve converter esse valor para centímetros e exibir o resultado.
+
+//Crie um formulário que permita ao usuário inserir um valor em quilômetros. O script PHP deve converter esse valor para milhas (1 quilômetro = 0.621371 milhas) e exibir o resultado.
