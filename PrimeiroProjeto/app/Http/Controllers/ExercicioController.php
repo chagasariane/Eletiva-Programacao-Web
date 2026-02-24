@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class ExercicioController extends Controller {
 
@@ -49,4 +50,34 @@ class ExercicioController extends Controller {
             return view('exercicio4', ['ndiv' => 0]);
         }
     }      
+
+    public function exibirFormulario5(){
+        return view('exercicio5');
+    }
+    public function calcularMedia(Request $request){
+        $nota1 = $request->input('nota1');
+        $nota2 = $request->input('nota2');
+        $nota3 = $request->input('nota3');
+        $media = ($nota1 + $nota2 + $nota3) / 3;
+        return view('exercicio5', ['media' => $media]);
+    }
+
+    public function exibirFormulario6(){
+        return view('exercicio6');
+    }
+    public function calcularFahrenheit(Request $request){
+        $celsius = $request->input('celsius');
+        $fahrenheit = ($celsius * (9 / 5)) + 32;
+        return view('exercicio6', ['fahrenheit' => $fahrenheit]);
+    }
+
+    public function exibirFormulario8(){
+        return view('exercicio8');
+    }
+    public function calcularAreaRetangulo(Request $request){
+        $largura = $request->input('largura');
+        $altura = $request->input('altura');
+        $area_retangulo = $altura * $largura;
+        return view('exercicio8', ['area_retangulo' => $area_retangulo]);
+    }
 }

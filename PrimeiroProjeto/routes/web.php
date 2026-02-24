@@ -21,3 +21,13 @@ Route::post('/resposta3', [ExercicioController::class, 'calcularMult']);
 
 Route::get('/exercicio4', [ExercicioController::class, 'exibirFormulario4']);
 Route::post('/resposta4', [ExercicioController::class, 'calcularDiv']);
+
+Route::get('/exercicio5', [ExercicioController::class, 'exibirFormulario5']);
+Route::post('/resposta5', [ExercicioController::class, 'calcularMedia']);
+
+Route::get('/exercicio6', [ExercicioController::class, 'exibirFormulario6']);
+Route::post('/resposta6', [ExercicioController::class, 'calcularFahrenheit']);
+
+Route::get('/exercicio8', [ExercicioController::class, 'exibirFormulario8']);
+Route::post('/resposta8', [ExercicioController::class, 'calcularAreaRetangulo']);
+
