@@ -47,4 +47,7 @@ Route::get('/exercicio12', [ExercicioController::class, 'exibirFormulario12']);
 Route::post('/resposta12', [ExercicioController::class, 'calcularBaseExpoente']);
 
 Route::get('/exercicio13', [ExercicioController::class, 'exibirFormulario13']);
-Route::post('/resposta13', [ExercicioController::class, 'calcularCentimetro']);
+Route::post('/resposta13', [ExercicioController::class, 'calcularCentimetros']);
+
+Route::get('/exercicio14', [ExercicioController::class, 'exibirFormulario14']);
+Route::post('/resposta14', [ExercicioController::class, 'calcularMilhas']);

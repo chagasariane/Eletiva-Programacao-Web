@@ -131,11 +131,19 @@ class ExercicioController extends Controller {
     public function exibirFormulario13(){
         return view('exercicio13');
     }
-    public function calcularCentimetro(Request $request){
-        $metro = $request->input('metro');
-        $centimetro = $metro * 100;
-        return view('exercicio13', ['centimetro' => $centimetro]);
+    public function calcularCentimetros(Request $request){
+        $metros = $request->input('metros');
+        $centimetros = $metros * 100;
+        return view('exercicio13', ['centimetros' => $centimetros]);
+    }
+
+    public function exibirFormulario14(){
+        return view('exercicio14');
+    }
+    public function calcularMilhas(Request $request){
+        $quilometros = $request->input('quilometros');
+        $milhas = $quilometros * 0.621371;
+        return view('exercicio14', ['milhas' => $milhas]);
     }
 }
-
-//Crie um formulário que permita ao usuário inserir um valor em quilômetros. O script PHP deve converter esse valor para milhas (1 quilômetro = 0.621371 milhas) e exibir o resultado.
+//Crie um formulário que permita ao usuário inserir seu peso (em kg) e altura (em metros). O script PHP deve calcular o IMC (peso / altura²) e exibir o resultado.
