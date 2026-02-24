@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
+use function PHPUnit\Framework\returnSelf;
+
 class ExercicioController extends Controller {
 
     public function exibirFormulario(){
@@ -145,5 +147,15 @@ class ExercicioController extends Controller {
         $milhas = $quilometros * 0.621371;
         return view('exercicio14', ['milhas' => $milhas]);
     }
+
+    public function exibirFormulario15(){
+        return view('exercicio15');
+    }
+    public function calcularImc(Request $request){
+        $peso = $request->input('peso');
+        $altura = $request->input('altura');
+        $imc = $peso / ($altura ** 2);
+        return view('exercicio15', ['imc' => $imc]);
+    }
 }
-//Crie um formulário que permita ao usuário inserir seu peso (em kg) e altura (em metros). O script PHP deve calcular o IMC (peso / altura²) e exibir o resultado.
+

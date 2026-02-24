@@ -51,3 +51,6 @@ Route::post('/resposta13', [ExercicioController::class, 'calcularCentimetros']);
 
 Route::get('/exercicio14', [ExercicioController::class, 'exibirFormulario14']);
 Route::post('/resposta14', [ExercicioController::class, 'calcularMilhas']);
+
+Route::get('/exercicio15', [ExercicioController::class, 'exibirFormulario15']);
+Route::post('/resposta15', [ExercicioController::class, 'calcularImc']);
