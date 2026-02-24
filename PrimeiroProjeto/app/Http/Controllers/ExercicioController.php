@@ -109,6 +109,12 @@ class ExercicioController extends Controller {
         return view('exercicio10', ['perimetroRetangulo' => $perimetroRetangulo]);
     }
     
+    public function exibirFormulario11(){
+        return view('exercicio11');
+    }
+    public function calcularPerimetroCirculo(Request $request){
+        $raio = $request->input('raio');
+        $perimetroCirculo = 2 * 3.14 * $raio;
+        return view('exercicio11', [ 'perimetroCirculo' => $perimetroCirculo]);
+    }
 }
-
-//11. Crie um formulário que permita ao usuário inserir o raio de um círculo. O script PHP deve calcular o perímetro do círculo (2πr) e exibir o resultado.

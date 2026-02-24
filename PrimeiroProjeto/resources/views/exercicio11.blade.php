@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('conteudo')
-    <h1>Teste 11</h1>
+    <h1>Exercício 11</h1>
     <form method="post" action="resposta11">
         @CSRF
         <div class="mb-3">
