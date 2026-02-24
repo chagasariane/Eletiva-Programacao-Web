@@ -34,4 +34,6 @@ Route::post('/resposta7', [ExercicioController::class, 'calcularCelsius']);
 Route::get('/exercicio8', [ExercicioController::class, 'exibirFormulario8']);
 Route::post('/resposta8', [ExercicioController::class, 'calcularAreaRetangulo']);
 
+Route::get('/exercicio9', [ExercicioController::class, 'exibirFormulario9']);
+Route::post('/resposta9', [ ExercicioController::class, 'calcularAreaCirculo']);
 

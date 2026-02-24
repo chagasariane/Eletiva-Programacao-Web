@@ -90,4 +90,13 @@ class ExercicioController extends Controller {
         return view('exercicio8', ['area_retangulo' => $area_retangulo]);
     }
 
+    public function exibirFormulario9(){
+        return view('exercicio9');
+    }
+    public function calcularAreaCirculo(Request $request){
+        $raio = $request->input('raio');
+        $area_circulo = 3.14 * ($raio ** 2);
+        return view('exercicio9', ['area_circulo' => $area_circulo]);
+    }
+    
 }
