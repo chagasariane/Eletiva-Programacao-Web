@@ -28,6 +28,10 @@ Route::post('/resposta5', [ExercicioController::class, 'calcularMedia']);
 Route::get('/exercicio6', [ExercicioController::class, 'exibirFormulario6']);
 Route::post('/resposta6', [ExercicioController::class, 'calcularFahrenheit']);
 
+Route::get('/exercicio7', [ExercicioController::class, 'exibirFormulario7']);
+Route::post('/resposta7', [ExercicioController::class, 'calcularCelsius']);
+
 Route::get('/exercicio8', [ExercicioController::class, 'exibirFormulario8']);
 Route::post('/resposta8', [ExercicioController::class, 'calcularAreaRetangulo']);
+
 

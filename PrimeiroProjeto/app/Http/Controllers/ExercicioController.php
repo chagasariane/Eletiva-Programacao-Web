@@ -71,6 +71,15 @@ class ExercicioController extends Controller {
         return view('exercicio6', ['fahrenheit' => $fahrenheit]);
     }
 
+    public function exibirFormulario7(){
+        return view('exercicio7');
+    }
+    public function calcularCelsius(Request $request){
+        $fahrenheit = $request->input('fahrenheit');
+        $celsius = ($fahrenheit - 32) * (5 / 9);
+        return view('exercicio7', ['celsius' => $celsius]);
+    }
+
     public function exibirFormulario8(){
         return view('exercicio8');
     }
@@ -80,4 +89,5 @@ class ExercicioController extends Controller {
         $area_retangulo = $altura * $largura;
         return view('exercicio8', ['area_retangulo' => $area_retangulo]);
     }
+
 }
