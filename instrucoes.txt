@@ -14,3 +14,6 @@ gerar formulario em https://vanessaborges2.github.io/Gerador-Formulario/ e coloc
 3. colocar o métodos na Controller.php (app\Http\Controllers\ExercicioController)
 
 30/04 - Não haverá aula
+
+Para criar Model:
+php artisan make:model Categoria -c --resource
