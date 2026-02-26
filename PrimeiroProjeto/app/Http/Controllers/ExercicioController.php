@@ -167,5 +167,38 @@ class ExercicioController extends Controller {
         $desconto = $preco - ($preco * ($percentual / 100));
         return view('exercicio16', ['desconto' => $desconto]);
     }
-}
 
+    public function exibirFormulario17(){
+        return view('exercicio17');
+    }
+    public function calcularJurosSimples(Request $request){
+        $capital = $request->input('capital');
+        $taxa = $request->input('taxa');
+        $periodo = $request->input('periodo');
+        $jurosSimples = $capital * $taxa * $periodo;
+        return view('exercicio17', ['jurosSimples' => $jurosSimples]);
+    }
+
+    public function exibirFormulario18(){
+        return view('exercicio18');
+    }
+    public function calcularJurosCompostos(Request $request){
+        $capital = $request->input('capital');
+        $taxa = $request->input('taxa');
+        $periodo = $request->input('periodo');
+        $jurosCompostos = $capital * ((1 + $taxa) ** $periodo);
+        return view('exercicio18', ['jurosCompostos' => $jurosCompostos]);
+    }
+
+    public function exibirFormulario19(){
+        return view('exercicio19');
+    }
+    public function calcularConversaoDias(Request $request){
+        $dias = $request->input('dias');
+        $horas = $dias * 24;
+        $minutos = $horas * 60;
+        $segundos = $minutos * 60;
+        return view('exercicio19', ['dias' => $dias, 'horas' => $horas, 'minutos' => $minutos, 'segundo' => $segundos]);
+    }
+}
+//19. Crie um formulário que permita ao usuário inserir um valor em dias. O script PHP deve converter esse valor para horas, minutos e segundos e exibir o resultado.
