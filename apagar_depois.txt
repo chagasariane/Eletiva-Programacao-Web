@@ -1,2 +1,0 @@
-20. Crie um formulário que permita ao usuário inserir uma distância e um tempo. O script PHP
-deve calcular a velocidade média (distância / tempo) e exibir o resultado.

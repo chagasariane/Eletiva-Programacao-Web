@@ -200,5 +200,14 @@ class ExercicioController extends Controller {
         $segundos = $minutos * 60;
         return view('exercicio19', ['dias' => $dias, 'horas' => $horas, 'minutos' => $minutos, 'segundo' => $segundos]);
     }
+
+    public function exibirFormulario20(){
+        return view('exercicio20');
+    }
+    public function calcularVelocidadeMedia(Request $request){
+        $distancia = $request->input('distancia');
+        $tempo = $request->input('tempo');
+        $velocidade = $distancia / $tempo;
+        return view('exercicio20', ['velocidade' => $velocidade]);
+    }  
 }
-//19. Crie um formulário que permita ao usuário inserir um valor em dias. O script PHP deve converter esse valor para horas, minutos e segundos e exibir o resultado.
