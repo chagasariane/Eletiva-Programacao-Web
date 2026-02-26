@@ -1,3 +1,6 @@
+git config --global user.email "ariane0.gc@gmail.com"
+git config --global user.name "Ariane Chagas"
+
 Para pc da Fatec:
 1. Startar o Laragon
 2. Clona repositório em C:\laragon\www
